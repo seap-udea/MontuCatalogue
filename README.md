@@ -100,3 +100,47 @@ cond = (montu_cat.Vmag<=6.5)
 nvis = len(np.unique(montu_cat.loc[cond,'HD']))
 print("Number of naked eye stars: ",nvis)
 ```
+
+Here are the statistics for the latest version of the catalogue which is based in `HYG 3.7`:
+
+```
+Catalogue completeness:
+	MN: 119626/119626 (100.0%)
+	HD: 119626/119626 (100.0%)
+	HR: 119626/119626 (100.0%)
+	HIP: 119626/119626 (100.0%)
+	Gl: 3801/119626 (3.2%)
+	Name: 119626/119626 (100.0%)
+	OtherDesignations: 119626/119626 (100.0%)
+	ProperName: 367/119626 (0.3%)
+	Bayer: 1537/119626 (1.3%)
+	Flamsteed: 2737/119626 (2.3%)
+	Constellation: 119625/119626 (100.0%)
+	RAJ2000: 119626/119626 (100.0%)
+	DecJ2000: 119626/119626 (100.0%)
+	pmRA: 119626/119626 (100.0%)
+	pmDec: 119626/119626 (100.0%)
+	RadVel: 119626/119626 (100.0%)
+	Distance: 119626/119626 (100.0%)
+	Vmag: 119626/119626 (100.0%)
+	Vmag_min: 16991/119626 (14.2%)
+	Vmag_max: 16991/119626 (14.2%)
+	B-V: 119626/119626 (100.0%)
+	SpType: 116578/119626 (97.5%)
+	Luminosity: 119626/119626 (100.0%)
+	XJ2000: 119626/119626 (100.0%)
+	YJ2000: 119626/119626 (100.0%)
+	ZJ2000: 119626/119626 (100.0%)
+	VXJ2000: 119626/119626 (100.0%)
+	VYJ2000: 119626/119626 (100.0%)
+	VZJ2000: 119626/119626 (100.0%)
+	Primary: 119626/119626 (100.0%)
+	MultipleID: 1086/119626 (0.9%)
+	IsMultiple: 119626/119626 (100.0%)
+	IsVariable: 119626/119626 (100.0%)
+Number of stars with proper name:  367
+Number of stars with Bayer name:  1537
+Number of stars with Flamsteed name:  2737
+Number of proper, Bayer and Flamsteed:  263
+Number of naked eye stars:  8896
+```
