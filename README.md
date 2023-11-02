@@ -3,7 +3,7 @@
 
 This is the tools to create the stellar catalogue for [`MontuPython`](https://github.com/seap-udea/MontuPython).
 
-The catalogue of `MontuPython` is an improved and slightly extended version of the incredible work of David Nash, who during almost a decade has created and released his version of the [HYG database](http://www.astronexus.com/hyg).
+The catalogue of `MontuPython` is an improved and slightly extended version of the incredible work of David Nash, who during almost a decade has created and released his version of the [HYG database](http://www.astronexus.com/hyg).  This catalogue has been adapted by Prof. Jorge I. Zuluaga (Universidad de Antioquia, Colombia).
 
 The `MontuCatalogue` is based on HYG but several improvements and adaptations has been done for making the catalogue useful for the purposes of the package.
 
@@ -144,3 +144,6 @@ Number of stars with Flamsteed name:  2737
 Number of proper, Bayer and Flamsteed:  263
 Number of naked eye stars:  8896
 ```
+------------
+
+This package has been designed and written by Jorge I. Zuluaga (C) 2023
