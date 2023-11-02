@@ -1,7 +1,9 @@
 # Stellar Catalogue for Montu Python /mnṯw ꜥꜣpp(y)/
 ## Astronomical ephemerides for the ancient world
 
-This is the tools to create the stellar catalogue for [`MontuPython`](https://github.com/seap-udea/MontuPython).
+These are the tools to create the stellar catalogue for [`MontuPython`](https://github.com/seap-udea/MontuPython).
+
+<p align="center"><img src="https://github.com/seap-udea/MontuCatalogue/blob/main/map-allstars-colors.png?raw=true" alt="Logo""/></p>
 
 The catalogue of `MontuPython` is an improved and slightly extended version of the incredible work of David Nash, who during almost a decade has created and released his version of the [HYG database](http://www.astronexus.com/hyg).  This catalogue has been adapted by Prof. Jorge I. Zuluaga (Universidad de Antioquia, Colombia).
 
