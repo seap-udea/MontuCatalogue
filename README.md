@@ -176,6 +176,34 @@ stars.where_in_space(at=mtime)
 
 For other examples see [MontuPython repository](https://github.com/seap-udea/MontuPython/).
 
+## Map of all stars in `MontuCatalogue`
+
+This is the code to generate the map at the beginning of this README:
+
+```python
+import matplotlib.pyplot as plt
+import montu as mn
+plt.style.use('dark_background')
+fig,ax=plt.subplots(figsize=(10,6),dpi=300)
+ax.set_position((0, 0, 1, 1))
+minsize=0.01
+maxsize=0.1
+mag2size=montu.Util._linear_map([-2,12],[maxsize,minsize])
+ind2color=montu.Util._linear_map([-0.2,2.5],[1,0])
+ax.scatter(allstars.data.RAJ2000,allstars.data.DecJ2000,
+s=mag2size(allstars.data.Vmag),c=rainbow(allstars.data['B-V']))
+ax.axis('off')
+ax.set_title('119 926 brightest known stars in the sky')
+ax.text(0.95,0.05,'Jorge I. Zuluaga @zuluagajorge, MontuCatalogue, https://github.com/seap-udea/MontuCatalogue',
+transform = ax.transAxes,fontsize=8,ha='right')
+fig.tight_layout()
+fig.savefig('map-allstars-colors.png',bbox_inches='tight')
+```
+
+This is the resulting plot:
+
+<p align="center"><img src="https://github.com/seap-udea/MontuCatalogue/blob/main/map-allstars-colors.png?raw=true" alt="Logo""/></p>
+
 ------------
 
-This package has been designed and written by Jorge I. Zuluaga (C) 2023
+This package has been designed and written by Jorge I. Zuluaga (C) 2023, 2024
