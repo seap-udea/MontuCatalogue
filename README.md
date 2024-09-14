@@ -147,7 +147,7 @@ Number of proper, Bayer and Flamsteed:  263
 Number of naked eye stars:  8896
 ```
 
-# `MontuCatalogue` in `MontuPython`
+## `MontuCatalogue` in `MontuPython`
 
 As pointed out before, `MontuCatalogue` has been developed along with the astronomical package `MontuPython`. You may load the complete star catalogue of `MontuCatalogue`  using:
 
