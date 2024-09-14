@@ -174,6 +174,8 @@ mtime = mn.Time('1000-01-01 00:00:00')
 stars.where_in_space(at=mtime)
 ```
 
+For other examples see [MontuPython repository](https://github.com/seap-udea/MontuPython/).
+
 ------------
 
 This package has been designed and written by Jorge I. Zuluaga (C) 2023
