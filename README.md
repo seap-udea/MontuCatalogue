@@ -146,6 +146,34 @@ Number of stars with Flamsteed name:  2737
 Number of proper, Bayer and Flamsteed:  263
 Number of naked eye stars:  8896
 ```
+
+# `MontuCatalogue` in `MontuPython`
+
+As pointed out before, `MontuCatalogue` has been developed along with the astronomical package `MontuPython`. You may load the complete star catalogue of `MontuCatalogue`  using:
+
+```python
+import montu as mn
+allstars = montu.Stars()
+```
+
+The data of the catalogue is in the attribute `allstars.data` which correspond to a `pandas dataframe`.
+
+Once loaded you can filter the stars:
+
+```python
+aldebaran = allstars.get_stars(ProperName='Aldebaran')
+stars = allstars.get_stars(Vmag=[-2,6.5])
+print(f"There is {stars.number} visible to the naked eye in the catalogue")
+hyades = stars.get_stars_around(center=[aldebaran.data.RAJ2000,aldebaran.data.DecJ2000],radius=5.5,Vmag=[-1,5])
+```
+
+You may precess the coordinates of the stars using:
+
+```python
+mtime = mn.Time('1000-01-01 00:00:00')
+stars.where_in_space(at=mtime)
+```
+
 ------------
 
 This package has been designed and written by Jorge I. Zuluaga (C) 2023
